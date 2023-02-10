@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tst1/createRoute.dart';
+import 'package:tst1/page5.dart';
 
 class page4 extends StatelessWidget {
   const page4({super.key});
@@ -35,6 +37,7 @@ class page4 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30)),
                 ),
                 onPressed: () {
+                  Navigator.of(context).push(createRoute(const page5()));
                   // Navigator.push(context,
                   //     MaterialPageRoute(builder: (context) => page1()));
                 },
